@@ -44,10 +44,6 @@
             padding: 3px;
             font-size:.8em;
         }
-        #equal{
-            padding:20px 110px;
-            font-size:1.4em;
-        }
         #doublezero{
             padding:10px 40px;
         }
@@ -91,7 +87,8 @@
             <div class="buttonbox">
             <button class="button" onclick="allclear()">AC</button>
             <button class="button" onclick="input('%')">%</button>
-            <button class="button" onclick="equal()" id="equal">=</button>
+            <button class="button" onclick="clearinput()">C</button>
+            <button class="button" onclick="equal()">=</button>
             <br></div><br>
     </div></div><br><br>
     <div class="bg-black text-white text-center font-mono">Ayush Verma</div>
@@ -103,7 +100,6 @@
         setInterval(datetime,1000);
         const inputf = document.getElementById("input");
         function input(a){
-            console.log(a);
             inputf.value+=a;
         }
         function equal(){
@@ -116,6 +112,11 @@
         function random(){
             let randomval = Math.floor(Math.random()*100)+1;
             inputf.value += randomval;
+        }
+        function clearinput(){
+            let val = String(inputf.value);
+            let newval = val.slice(0,-1);
+            inputf.value = newval;
         }
     </script>
 </body>
