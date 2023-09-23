@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .input{
+            background-color: rgba(7, 7, 7, 0.059);
+            font-size:2em;
+            display:block;
+            opacity:.8;
+            color:limegreen;
+            text-align:center;
+            font-family:monospace;
+            height: 50px;
+            font-weight:bold;
+        }
+        .button{
+            transition: all ease .2s;
+            padding: 15px 45px;
+            margin: 0px 0px;
+            border:2px solid white;
+            background-color:black;
+            display: inline-block;
+            font-size:1.4em;
+            border-radius:10px;
+            color:white;
+            text-shadow: 3px 3px 3px red;
+            cursor:pointer;
+        }
+        .button:hover{
+            color:red;
+            text-shadow: 3px 3px 3px white;
+        }
+        .buttonbox{
+            display:flex;
+            justify-content: space-around;
+        }
+        #random{
+            padding: 3px;
+            font-size:.8em;
+        }
+        #equal{
+            padding:20px 110px;
+            font-size:1.4em;
+        }
+        #doublezero{
+            padding:10px 40px;
+        }
+        body{
+            background-image: linear-gradient(to right,purple,blue,cyan)
+        }
+    </style>
+</head>
+<body>
+    <div id="datetime" class="bg-white text-blue-500 text-center font-sans"></div><br><br>
+    <div class="mx-auto rounded-2xl w-4/12 border-2 border-solid border-white font-mono bg-gray-500">
+        <input disabled="on" id="input" class="input mx-auto w-11/12 rounded-xl"><br>
+        <div class="w-full mx-auto">
+            <div class="buttonbox">
+            <button class="button" onclick="input(1)">1</button>
+            <button class="button" onclick="input(2)">2</button>
+            <button class="button" onclick="input(3)">3</button>
+            <button class="button" onclick="input('+')">+</button><br></div>
+            <div class="buttonbox">
+            <button class="button" onclick="input(4)">4</button>
+            <button class="button" onclick="input(5)">5</button>
+            <button class="button" onclick="input(6)">6</button>
+            <button class="button" onclick="input('-')">-</button><br></div>
+            <div class="buttonbox">
+            <button class="button" onclick="input(7)">7</button>
+            <button class="button" onclick="input(8)">8</button>
+            <button class="button" onclick="input(9)">9</button>
+            <button class="button" onclick="input('*')">*</button><br></div>
+            <div class="buttonbox">
+            <button class="button" onclick="input(0)">0</button>
+            <button class="button" onclick="input('00')" id="doublezero">00</button>
+            <button class="button" onclick="random()" id="random">Random(1-100)</button>
+            <button class="button" onclick="input('/')">/</button><br></div>
+            <div class="buttonbox">
+            <button class="button" onclick="allclear()">AC</button>
+            <button class="button" onclick="input('%')">%</button>
+            <button class="button" onclick="equal()" id="equal">=</button>
+            <br></div><br>
+    </div></div><br><br>
+    <div class="bg-black text-white text-center font-mono">Ayush Verma</div>
+    <script>
+        function datetime(){
+            const date = new Date();
+            document.getElementById("datetime").innerText = date;
+        }
+        setInterval(datetime,1000);
+        const inputf = document.getElementById("input");
+        function input(a){
+            console.log(a);
+            inputf.value+=a;
+        }
+        function equal(){
+            answer = eval(inputf.value);
+            inputf.value = answer;
+        }
+        function allclear(){
+            inputf.value = ''
+        }
+        function random(){
+            let randomval = Math.floor(Math.random()*100)+1;
+            inputf.value += randomval;
+        }
+    </script>
+</body>
+</html>
