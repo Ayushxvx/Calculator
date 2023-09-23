@@ -19,13 +19,8 @@
         }
         .button{
             transition: all ease .2s;
-            padding: 15px 40px;
-            margin: 0px 0px;
-            border:2px solid white;
             background-color:black;
             display: inline-block;
-            font-size:2em;
-            border-radius:10px;
             color:white;
             text-shadow: 3px 3px 3px red;
             cursor:pointer;
@@ -39,13 +34,6 @@
         .buttonbox{
             display:flex;
             justify-content: space-around;
-        }
-        #random{
-            padding: 3px;
-            font-size:1.9em;
-        }
-        #doublezero{
-            padding:10px 40px;
         }
         body{
             background-image: linear-gradient(to right,purple,blue,cyan);
@@ -65,30 +53,30 @@
         <input disabled="on" id="input" class="input mx-auto w-11/12 rounded-xl"><br>
         <div class="w-full mx-auto">
             <div class="buttonbox">
-            <button class="button w-3/12" onclick="input(1)">1</button>
-            <button class="button w-3/12" onclick="input(2)">2</button>
-            <button class="button w-3/12" onclick="input(3)">3</button>
-            <button class="button w-3/12" onclick="input('+')">+</button><br></div>
+            <button class="button w-3/12 text-4xl sm:text-4xl border-2 border-white border-solid py-5 px-24" onclick="input(1)">1</button>
+            <button class="button w-3/12 text-4xl sm:text-4xl border-2 border-white border-solid py-5 px-24" onclick="input(2)">2</button>
+            <button class="button w-3/12 text-4xl sm:text-4xl border-2 border-white border-solid py-5 px-24" onclick="input(3)">3</button>
+            <button class="button w-3/12 text-4xl sm:text-4xl border-2 border-white border-solid py-5 px-24" onclick="input('+')">+</button><br></div>
             <div class="buttonbox">
-            <button class="button w-3/12" onclick="input(4)">4</button>
-            <button class="button w-3/12" onclick="input(5)">5</button>
-            <button class="button w-3/12" onclick="input(6)">6</button>
-            <button class="button w-3/12" onclick="input('-')">-</button><br></div>
+            <button class="button w-3/12 text-4xl sm:text-4xl border-2 border-white border-solid py-5 px-24" onclick="input(4)">4</button>
+            <button class="button w-3/12 text-4xl sm:text-4xl border-2 border-white border-solid py-5 px-24" onclick="input(5)">5</button>
+            <button class="button w-3/12 text-4xl sm:text-4xl border-2 border-white border-solid py-5 px-24" onclick="input(6)">6</button>
+            <button class="button w-3/12 text-4xl sm:text-4xl border-2 border-white border-solid py-5 px-24" onclick="input('-')">-</button><br></div>
             <div class="buttonbox">
-            <button class="button w-3/12" onclick="input(7)">7</button>
-            <button class="button w-3/12" onclick="input(8)">8</button>
-            <button class="button w-3/12" onclick="input(9)">9</button>
-            <button class="button w-3/12" onclick="input('*')">*</button><br></div>
+            <button class="button w-3/12 text-4xl sm:text-4xl border-2 border-white border-solid py-5 px-24" onclick="input(7)">7</button>
+            <button class="button w-3/12 text-4xl sm:text-4xl border-2 border-white border-solid py-5 px-24" onclick="input(8)">8</button>
+            <button class="button w-3/12 text-4xl sm:text-4xl border-2 border-white border-solid py-5 px-24" onclick="input(9)">9</button>
+            <button class="button w-3/12 text-4xl sm:text-4xl border-2 border-white border-solid py-5 px-24" onclick="input('*')">*</button><br></div>
             <div class="buttonbox">
-            <button class="button w-3/12" onclick="input(0)">0</button>
-            <button class="button w-3/12" onclick="input('00')" id="doublezero">00</button>
-            <button class="button w-3/12" onclick="random()" id="random">Random(1-100)</button>
-            <button class="button w-3/12" onclick="input('/')">/</button><br></div>
-            <div class="buttonbox">
-            <button class="button w-3/12" onclick="allclear()">AC</button>
-            <button class="button w-3/12" onclick="input('%')">%</button>
-            <button class="button w-3/12" onclick="clearinput()">C</button>
-            <button class="button w-3/12" onclick="equal()">=</button>
+            <button class="button w-3/12 text-4xl sm:text-4xl border-2 border-white border-solid py-5 px-24" onclick="input(0)">0</button>
+            <button class="button w-3/12 text-4xl sm:text-4xl border-2 border-white border-solid py-5 px-24" onclick="input('00')" id="doublezero">00</button>
+            <button class="button w-3/12 text-2xl sm:text-2xl border-2 border-white border-solid py-5 px-24" onclick="random()" id="random">Random(1-100)</button>
+            <button class="button w-3/12 text-4xl sm:text-4xl border-2 border-white border-solid py-5 px-24" onclick="input('/')">/</button><br></div>
+            <div class=" buttonbox">
+            <button class="button w-3/12 text-4xl sm:text-4xl border-2 border-white border-solid py-5 px-24" onclick="allclear()">AC</button>
+            <button class="button w-3/12 text-4xl sm:text-4xl border-2 border-white border-solid py-5 px-24" onclick="input('%')">%</button>
+            <button class="button w-3/12 text-4xl sm:text-4xl border-2 border-white border-solid py-5 px-24" onclick="clearinput()">C</button>
+            <button class="button w-3/12 text-4xl sm:text-4xl border-2 border-white border-solid py-5 px-24" onclick="equal()">=</button>
             <br></div><br>
     </div></div><br><br>
     <div class="bg-black text-white text-center font-mono">Ayush Verma</div>
