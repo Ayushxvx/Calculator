@@ -1,0 +1,55 @@
+h2{
+    color:black;
+    background-color: white;
+    font-family:monospace;
+    font-weight:bold;
+    text-align:center;
+    padding:15px;
+}
+h1{
+    color:whitesmoke;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight:bold;
+    text-align:center;
+}
+body{
+    background-image:linear-gradient(to right,darkblue,purple,black);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+.div1,.div2,.div3,.div4,.div5{
+    display:flex;
+    justify-content: space-around;
+}
+.buttons{
+    color:white;
+    background-color: black;
+    height:50px;
+    border:3px solid white;
+    font-size:1.5em;
+    width:100%;
+    cursor:pointer;
+}
+.calculator{
+    border-radius:5px;
+    border:10px solid white;
+    margin-left:auto;
+    margin-right:auto;
+    width:50%;
+}
+input{
+    width:100%;
+    border:1px solid white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    color:limegreen;
+    height:40px;
+    font-size:.9em;
+    text-align:center;
+}
+.buttons:active{
+    color:limegreen;
+    border-color:limegreen;
+}

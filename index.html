@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h2 id="datetime"></h2><br>
+    <h1>CALCULATOR</h1><br>
+    <div class="calculator">
+        <input type="text" id="inputvalue" disabled><br>
+        <div class="div5">
+            <button class="buttons" onclick="clearonevalue()">C</button>
+            <button class="buttons" onclick="allclear()">AC</button>
+            <button class="buttons" onclick="randomint()">Random Number</button>
+        </div>
+        <div class="div1">
+            <button class="buttons" onclick="setvalue('7')">7</button>
+            <button class="buttons" onclick="setvalue('8')">8</button>
+            <button class="buttons" onclick="setvalue('9')">9</button>
+            <button class="buttons" onclick="setvalue('/')">/</button>
+        </div>
+        <div class="div2">
+            <button class="buttons" onclick="setvalue('4')">4</button>
+            <button class="buttons" onclick="setvalue('5')">5</button>
+            <button class="buttons" onclick="setvalue('6')">6</button>
+            <button class="buttons" onclick="setvalue('*')">X</button>
+        </div>
+        <div class="div3">
+            <button class="buttons" onclick="setvalue('1')">1</button>
+            <button class="buttons" onclick="setvalue('2')">2</button>
+            <button class="buttons" onclick="setvalue('3')">3</button>
+            <button class="buttons" onclick="setvalue('+')">+</button>
+        </div>
+        <div class="div4">
+            <button class="buttons" onclick="setvalue('0')">0</button>
+            <button class="buttons" onclick="setvalue('00')">00</button>
+            <button class="buttons" onclick="setvalue('-')">-</button>
+            <button class="buttons" onclick="getanswer()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
